@@ -238,3 +238,21 @@
 
   const search=$('#globalSearch'); let searchBox=null;
   search.addEventListener('input',()=>{
+    const q=normalize(search.value.trim());
+    if(!q){searchBox?.remove();searchBox=null;return}
+    const results=[];
+    COURSE_DATA.modules.forEach(m=>m.lessons.forEach(l=>{
+      const text=[m.title,l.title,l.intro,...l.sections.flat(),...l.terms].join(' ');
+      if(normalize(text).includes(q))results.push({type:'lesson',id:l.id,title:l.title,meta:m.title});
+    }));
+    COURSE_DATA.glossary.forEach(([t,d])=>{if(normalize(t+' '+d).includes(q))results.push({type:'glossary',title:t,meta:d})});
+    searchBox?.remove(); searchBox=document.createElement('div');searchBox.className='search-results';
+    searchBox.innerHTML=(results.slice(0,12).map((r,i)=>`<button class="search-result" data-sidx="${i}"><strong>${escapeHTML(r.title)}</strong><small>${escapeHTML(r.meta)}</small></button>`).join('')||'<div class="empty">Nada encontrado.</div>');
+    document.body.appendChild(searchBox);
+    $$('[data-sidx]',searchBox).forEach(b=>b.addEventListener('click',()=>{const r=results[+b.dataset.sidx];searchBox.remove();searchBox=null;search.value='';if(r.type==='lesson')setRoute('lesson',{lessonId:r.id});else{setRoute('glossary');setTimeout(()=>{$('#glossarySearch').value=r.title;$('#glossarySearch').dispatchEvent(new Event('input'))},20)}}));
+  });
+  document.addEventListener('click',e=>{if(searchBox && !searchBox.contains(e.target) && e.target!==search){searchBox.remove();searchBox=null}});
+
+  if('serviceWorker' in navigator && location.protocol!=='file:') navigator.serviceWorker.register('./sw.js').catch(()=>{});
+  applyTheme();updateProgressUI();render();
+})();
