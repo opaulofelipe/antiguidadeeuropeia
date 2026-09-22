@@ -221,7 +221,7 @@ const COURSE_DATA = {
           ['Britânia','A muralha de Adriano organizava circulação e presença militar no norte da província. Seu objetivo era controle territorial, não separar dois mundos completamente isolados.'],
           ['Danúbio','O corredor danubiano conectava províncias, exércitos e mercados. Também foi palco recorrente de guerras com dácios, sármatas, godos e outros grupos.']
         ],terms:['limes','Muralha de Adriano','Reno','Danúbio']},
-        {id:'m11l3',title:'Mobilidade e identidades profinciais',duration:'16 min',intro:'O Império Romano colocou pessoas de regiões distantes em contato cotidiano.',sections:[
+        {id:'m11l3',title:'Mobilidade e identidades provinciais',duration:'16 min',intro:'O Império Romano colocou pessoas de regiões distantes em contato cotidiano.',sections:[
           ['Soldados e migrantes','Unidades militares podiam servir longe de sua região de origem. Comerciantes, escravizados, administradores e famílias também atravessavam o império.'],
           ['Culturas locais','Inscrições mostram nomes, deuses e línguas locais convivendo com práticas romanas. Identidade provincial podia ser simultaneamente local e imperial.'],
           ['Cidades como nós','Cidades organizavam tributação, cultos, mercados e status cívico. Em algumas regiões, sua expansão mudou profundamente formas anteriores de organização do território.']
