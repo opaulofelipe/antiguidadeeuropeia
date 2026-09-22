@@ -178,3 +178,33 @@ const COURSE_DATA = {
         ],terms:['anarquia militar','Império Gálico','Aureliano','inflação']},
         {id:'m12l2',title:'Diocleciano, Constantino e cristianização',duration:'19 min',intro:'As reformas do final do século III e início do IV alteraram a estrutura do governo imperial.',sections:[
           ['Tetrarquia','Diocleciano tentou dividir responsabilidades entre governantes para responder melhor às crises. A experiência reduziu distâncias administrativas, mas não eliminou disputas sucessórias.'],
+          ['Constantino','Constantino venceu rivais, reunificou o império e fundou Constantinopla como nova capital imperial. Seu apoio ao cristianismo transformou relações entre religião e Estado.'],
+          ['Cristianização desigual','O cristianismo cresceu por redes urbanas, patronagem, instituições e decisões imperiais. Práticas tradicionais continuaram por muito tempo; a mudança foi gradual e conflitiva.']
+        ],terms:['Tetrarquia','Constantino','Constantinopla','cristianização']},
+        {id:'m12l3',title:'476 e a transformação do Ocidente',duration:'20 min',intro:'A deposição de Rômulo Augústulo em 476 é uma referência simbólica, não um “apagão” instantâneo da civilização romana.',sections:[
+          ['Migrações e federações','Godos, vândalos, suevos, burgúndios e outros grupos entraram no império em circunstâncias diversas: invasão, migração, recrutamento, alianças e assentamentos negociados.'],
+          ['Reinos pós-romanos','Novos reis utilizaram instituições, leis, elites e símbolos romanos. Na Itália ostrogoda, por exemplo, administração romana continuou coexistindo com poder militar godo.'],
+          ['Continuidade e ruptura','O desaparecimento do imperador no Ocidente mudou a política, mas cidades, Igreja, latim, direito, fiscalidade e hierarquias sociais não desapareceram de uma vez. A Antiguidade Tardia é melhor entendida como transformação histórica.']
+        ],terms:['foederati','Ostrogodos','476','Antiguidade Tardia']}
+      ]
+    }
+  ],
+  glossary: [
+    ['Anacronismo','Aplicação indevida de conceitos, valores ou instituições de uma época a outra.'],
+    ['Apoikia','Termo grego para assentamento fundado por uma comunidade de origem; não equivale exatamente ao colonialismo moderno.'],
+    ['Boulé','Conselho cívico; em Atenas clássica, o Conselho dos Quinhentos preparava assuntos para a Assembleia.'],
+    ['Civitas','Pode indicar cidadania, comunidade cívica ou unidade político-administrativa, conforme o contexto romano.'],
+    ['Diádocos','Generais e sucessores que disputaram o império de Alexandre após 323 a.C.'],
+    ['Ekklesia','Assembleia dos cidadãos em várias pólis gregas; em Atenas, principal espaço de decisão política direta.'],
+    ['Epigrafia','Estudo histórico de inscrições gravadas em pedra, metal, cerâmica e outros suportes duráveis.'],
+    ['Etnogênese','Processo histórico de formação e transformação de identidades coletivas.'],
+    ['Foederati','Grupos vinculados ao Império Romano por tratados militares e políticos, especialmente na Antiguidade Tardia.'],
+    ['Hegemonia','Predominância política ou militar de uma potência sobre outras sem necessariamente implicar anexação direta.'],
+    ['Koiné','Forma comum da língua grega difundida amplamente no período helenístico.'],
+    ['Limes','Sistema de fronteira romano composto por fortes, estradas, rios, muralhas e zonas controladas; não apenas uma linha fixa.'],
+    ['Numismática','Estudo de moedas e sistemas monetários como fontes históricas.'],
+    ['Oppidum','Termo latino aplicado a grandes assentamentos fortificados, especialmente na Europa da Idade do Ferro.'],
+    ['Pólis','Comunidade política grega que integrava corpo cívico, instituições, território e cultos.'],
+    ['Princeps','“Primeiro cidadão”; título e linguagem política usados pelos imperadores do início do Principado.'],
+    ['Romanização','Conceito historiográfico para mudanças sob domínio romano; hoje usado com cautela para evitar a ideia de assimilação unilateral.'],
+    ['Sincretismo','Combinação, aproximação ou reelaboração de elementos religiosos e culturais de tradições diferentes.'],
