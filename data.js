@@ -58,6 +58,66 @@ const COURSE_DATA = {
         ],terms:['pólis','cidadania','hoplita','tirania']},
         {id:'m3l2',title:'Colonização e redes mediterrânicas',duration:'14 min',intro:'Entre os séculos VIII e VI a.C., comunidades gregas fundaram assentamentos do Mar Negro à Península Ibérica.',sections:[
           ['Por que fundar colônias?','Pressões por terra, conflitos políticos, oportunidades comerciais e estratégias locais variavam de caso a caso. Não houve um único “projeto colonial grego”.'],
+          ['Contato e conflito','Novos assentamentos negociaram, guerrearam e misturaram práticas com populações locais. Cerâmicas e alfabetos circularam em ambientes culturalmente híbridos.'],
+          ['Magna Grécia','No sul da Itália e Sicília, cidades como Tarento, Siracusa e Síbaris tornaram-se importantes centros políticos e econômicos. A presença grega influenciou profundamente a história itálica.']
+        ],terms:['apoikia','metrópole','Magna Grécia','Mar Negro']},
+        {id:'m3l3',title:'Atenas e Esparta antes das Guerras Médicas',duration:'17 min',intro:'Atenas e Esparta desenvolveram instituições muito diferentes, ambas baseadas em fortes exclusões sociais.',sections:[
+          ['Atenas e as reformas','Sólon enfrentou endividamento e tensões sociais; Clístenes reorganizou corpos cívicos e instituições, contribuindo para uma democracia que se consolidaria no século V a.C.'],
+          ['Esparta e o sistema lacedemônio','A sociedade espartana distinguia esparciatas, periecos e hilotas. A cidadania plena dependia de educação militar e participação em refeições coletivas, sustentadas pelo trabalho de populações subordinadas.'],
+          ['Comparar sem caricaturar','Atenas não era uma democracia universal, e Esparta não era apenas um “quartel”. Ambas tinham instituições complexas, conflitos internos, desigualdades e transformações históricas.']
+        ],terms:['Sólon','Clístenes','hilotas','ephoroi']}
+      ]
+    },
+    {
+      id:'m4', number:4, title:'Grécia Clássica', period:'480–323 a.C.', summary:'Guerras Médicas, democracia ateniense, imperialismo, Guerra do Peloponeso e hegemonias do século IV.',
+      lessons:[
+        {id:'m4l1',title:'Guerras Médicas e hegemonia ateniense',duration:'17 min',intro:'As guerras entre cidades gregas e o Império Aquemênida alteraram o equilíbrio político do Egeu.',sections:[
+          ['Uma guerra desigual, não simples','O Império Persa possuía recursos muito superiores, mas a geografia, as alianças e as escolhas estratégicas gregas foram decisivas em batalhas como Maratona, Salamina e Plateia.'],
+          ['Liga de Delos','Criada para continuar a guerra contra os persas, a liga passou progressivamente à liderança coercitiva de Atenas. Tributos financiaram frota, obras e poder imperial.'],
+          ['Democracia e império','A democracia ateniense coexistiu com escravidão, exclusão feminina, limitação a cidadãos homens e dominação de aliados. Esse contraste é central para compreender a experiência política ateniense.']
+        ],terms:['Maratona','Salamina','Liga de Delos','tributo']},
+        {id:'m4l2',title:'Democracia ateniense e sociedade',duration:'18 min',intro:'A democracia direta ateniense exigia participação intensa, mas definia de forma estreita quem podia participar.',sections:[
+          ['Instituições','A Assembleia votava decisões; o Conselho dos Quinhentos preparava pautas; magistraturas podiam ser sorteadas ou eleitas; tribunais populares mobilizavam grande número de cidadãos.'],
+          ['Trabalho e desigualdade','A economia incluía pequenos produtores, artesãos, comerciantes, metecos e grande número de pessoas escravizadas. A participação cívica de alguns dependia de uma sociedade profundamente desigual.'],
+          ['Cultura pública','Teatro, festivais, retórica, filosofia e monumentos estavam ligados à vida cívica. A cultura clássica foi também um campo de disputa sobre guerra, gênero, poder e moralidade.']
+        ],terms:['ekklesia','boulé','meteco','ostracismo']},
+        {id:'m4l3',title:'Guerra do Peloponeso e crise das hegemonias',duration:'18 min',intro:'A rivalidade entre Atenas e Esparta desencadeou um conflito longo e destrutivo entre 431 e 404 a.C.',sections:[
+          ['Sistemas de alianças','A Liga de Delos e a Liga do Peloponeso estruturavam rivalidades. O conflito envolveu recursos navais, terrestres, revoltas, epidemias, intervenções persas e mudanças de alianças.'],
+          ['Depois de 404 a.C.','A vitória espartana não produziu estabilidade. Tebas, Atenas, Esparta e outras cidades disputaram hegemonia, enquanto a Pérsia continuou interferindo na política grega.'],
+          ['Ascensão macedônica','Filipe II reformou o exército, explorou divisões entre as cidades e venceu em Queroneia, em 338 a.C. A Macedônia passou a dominar o sistema político grego.']
+        ],terms:['Peloponeso','hegemonia','Queroneia','Filipe II']}
+      ]
+    },
+    {
+      id:'m5', number:5, title:'Macedônia e mundo helenístico', period:'359–31 a.C.', summary:'Filipe II, Alexandre, reinos helenísticos e transformações culturais que repercutiram na Europa.',
+      lessons:[
+        {id:'m5l1',title:'Filipe II e Alexandre',duration:'16 min',intro:'A Macedônia converteu recursos, diplomacia e inovação militar em hegemonia sobre a Grécia.',sections:[
+          ['Reformas macedônicas','Filipe II combinou falange armada com sarissas, cavalaria, infantaria especializada, cerco e diplomacia. Seu poder foi resultado de um sistema, não de uma única arma.'],
+          ['Conquistas de Alexandre','Alexandre destruiu o Império Aquemênida e chegou ao noroeste do subcontinente indiano. O império foi rápido e vasto, mas politicamente frágil após sua morte em 323 a.C.'],
+          ['Construindo legitimidade','Alexandre adotou práticas locais e símbolos diversos em diferentes regiões. Essas escolhas geraram tensões entre elites macedônicas e mostram que conquista exigia negociação cultural.']
+        ],terms:['sarissa','heteroi','Alexandre','Aquemênidas']},
+        {id:'m5l2',title:'Os reinos helenísticos',duration:'15 min',intro:'Depois de Alexandre, generais e dinastias disputaram seu legado e criaram novos Estados.',sections:[
+          ['Diádocos','Ptolomeus no Egito, Selêucidas em grande parte da Ásia e Antigônidas na Macedônia foram algumas das principais dinastias. Fronteiras mudaram repetidamente.'],
+          ['Cidades e circulação','Fundação e expansão de cidades facilitaram administração, comércio e difusão da língua grega koiné. Isso não apagou línguas e culturas locais; produziu combinações variadas.'],
+          ['A Europa helenística','Macedônia, Grécia, Epiro, Trácia e o Adriático continuaram em intensa disputa. Roma, inicialmente uma potência itálica, acabaria intervindo e submetendo os reinos macedônicos.']
+        ],terms:['diádocos','koiné','Antigônidas','sincretismo']},
+        {id:'m5l3',title:'Cultura helenística',duration:'14 min',intro:'O período helenístico ampliou redes intelectuais e artísticas em um espaço político fragmentado.',sections:[
+          ['Novos centros','Alexandria, Pérgamo e Rodes juntaram bibliotecas, cortes, cientistas, artistas e mercados. Atenas continuou importante, mas já não monopolizava a produção intelectual grega.'],
+          ['Filosofias para um mundo instável','Estoicismo e epicurismo formularam respostas diferentes para ética, felicidade e vida em comunidade. O ceticismo também ganhou força.'],
+          ['Arte e poder','Escultura, arquitetura e urbanismo exploraram dramatização, monumentalidade e representação de múltiplos grupos sociais. A produção artística estava ligada à competição dinástica.']
+        ],terms:['estoicismo','epicurismo','Pérgamo','cosmopolitismo']}
+      ]
+    },
+    {
+      id:'m6', number:6, title:'Itália antes da hegemonia romana', period:'c. 1000–264 a.C.', summary:'Etruscos, latinos, samnitas, gregos da Itália e a formação de Roma em um mosaico regional.',
+      lessons:[
+        {id:'m6l1',title:'Etruscos e a Itália central',duration:'17 min',intro:'As cidades etruscas formaram uma das culturas urbanas mais influentes da Itália pré-romana.',sections:[
+          ['Cidades e elites','Tarquinia, Veios, Cerveteri e outras cidades possuíam aristocracias poderosas, redes comerciais e tradições religiosas próprias. Não existiu um “Império Etrusco” centralizado.'],
+          ['Contato mediterrânico','Arte e escrita etruscas mostram contatos com gregos, fenícios e povos itálicos. O alfabeto etrusco foi adaptado de modelos gregos e influenciou alfabetos posteriores na península.'],
+          ['Relações com Roma','Tradições romanas lembravam reis de origem etrusca. Mesmo quando Roma se expandiu sobre cidades etruscas, elementos religiosos, políticos e artísticos continuaram influentes.']
+        ],terms:['Etrúria','Veios','Tarquinia','haruspício']},
+        {id:'m6l2',title:'Samnitas, latinos e outros povos itálicos',duration:'15 min',intro:'A península Itálica era linguisticamente e politicamente plural.',sections:[
+          ['Mosaico itálico','Latinos, sabinos, oscos, úmbrios, samnitas, volscos e outros grupos ocupavam territórios próximos, frequentemente organizados em cidades, comunidades rurais e ligas.'],
           ['Guerras samnitas','Nos séculos IV e III a.C., Roma enfrentou os samnitas em conflitos prolongados pelo controle da Itália central e meridional. A vitória romana foi gradual e custosa.'],
           ['Alianças e incorporação','Roma combinou conquista, tratados, colônias, cidadania em graus distintos e redes viárias. Esse modelo flexível ajudou a mobilizar recursos humanos muito superiores aos de uma única cidade.']
         ],terms:['samnitas','foedus','colônia','socii']},
