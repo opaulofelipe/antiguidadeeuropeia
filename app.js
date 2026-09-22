@@ -158,3 +158,83 @@
     }
     if(a.type==='sort'){
       sortState=shuffle([...a.items]); return sortHTML();
+    }
+    return '';
+  }
+  function sortHTML(){ return `<div class="sort-list">${sortState.map((x,i)=>`<div class="sort-item"><span>${i+1}. ${escapeHTML(x)}</span><span class="sort-controls"><button aria-label="Mover para cima" data-sort-up="${i}">↑</button><button aria-label="Mover para baixo" data-sort-down="${i}">↓</button></span></div>`).join('')}</div><button class="btn primary" id="checkSort">Verificar ordem</button>`; }
+  function bindActivity(a){
+    if(a.type==='choice') $$('[data-choice]').forEach(btn=>btn.addEventListener('click',()=>{
+      const selected=+btn.dataset.choice; $$('[data-choice]').forEach((b,i)=>{b.disabled=true;b.classList.toggle('correct',i===a.answer); if(i===selected&&i!==a.answer)b.classList.add('wrong')});
+      finishActivity(a,selected===a.answer,a.explain);
+    }));
+    if(a.type==='truefalse') $$('[data-tf]').forEach(btn=>btn.addEventListener('click',()=>{
+      const selected=btn.dataset.tf==='true'; $$('[data-tf]').forEach(b=>{b.disabled=true;const val=b.dataset.tf==='true';b.classList.toggle('correct',val===a.answer);if(val===selected&&selected!==a.answer)b.classList.add('wrong')});
+      finishActivity(a,selected===a.answer,a.explain);
+    }));
+    if(a.type==='match'){
+      $$('[data-match-left]').forEach(b=>b.addEventListener('click',()=>{ if(b.classList.contains('solved'))return; $$('[data-match-left]').forEach(x=>x.classList.remove('selected')); b.classList.add('selected');matchState.left=b.dataset.matchLeft;tryMatch(a);}));
+      $$('[data-match-right]').forEach(b=>b.addEventListener('click',()=>{ if(b.classList.contains('solved'))return; $$('[data-match-right]').forEach(x=>x.classList.remove('selected')); b.classList.add('selected');matchState.right=b.dataset.matchRight;tryMatch(a);}));
+    }
+    if(a.type==='sort') bindSort(a);
+  }
+  function tryMatch(a){
+    if(!matchState.left||!matchState.right)return;
+    const ok=a.pairs.some(p=>p[0]===matchState.left&&p[1]===matchState.right);
+    if(ok){
+      $$(`[data-match-left]`).filter(b=>b.dataset.matchLeft===matchState.left).forEach(b=>b.classList.add('solved'));
+      $$(`[data-match-right]`).filter(b=>b.dataset.matchRight===matchState.right).forEach(b=>b.classList.add('solved'));
+      matchState.solved.push(matchState.left);
+      if(matchState.solved.length===a.pairs.length)finishActivity(a,true,'Todas as associações estão corretas.');
+    } else toast('Essa associação não corresponde. Tente outra combinação.');
+    $$('.match-item').forEach(x=>x.classList.remove('selected'));matchState.left=null;matchState.right=null;
+  }
+  function bindSort(a){
+    $$('[data-sort-up]').forEach(b=>b.addEventListener('click',()=>moveSort(+b.dataset.sortUp,-1,a)));
+    $$('[data-sort-down]').forEach(b=>b.addEventListener('click',()=>moveSort(+b.dataset.sortDown,1,a)));
+    $('#checkSort')?.addEventListener('click',()=>{const ok=sortState.every((x,i)=>x===a.answer[i]);finishActivity(a,ok,ok?'A sequência está correta.':'Ainda há itens fora de ordem. Compare os processos e tente novamente.',!ok);});
+  }
+  function moveSort(i,delta,a){const j=i+delta;if(j<0||j>=sortState.length)return;[sortState[i],sortState[j]]=[sortState[j],sortState[i]];$('#activityBody').innerHTML=sortHTML();bindSort(a);}
+  function finishActivity(a,correct,message,allowRetry=false){
+    state.activityAttempts[a.id]=(state.activityAttempts[a.id]||0)+1;
+    if(correct&&!state.completedActivities.includes(a.id))state.completedActivities.push(a.id);
+    saveState();
+    $('#activityFeedback').innerHTML=`<div class="feedback"><strong>${correct?'Correto.':'Ainda não.'}</strong><div>${escapeHTML(message||'')}</div>${allowRetry?'<button class="btn small" id="retryActivity" style="margin-top:10px">Tentar novamente</button>':''}</div>`;
+    if(correct)toast('Atividade concluída.');
+    if(allowRetry)$('#retryActivity')?.addEventListener('click',()=>renderActivities());
+  }
+
+  function renderTimeline(){
+    main.innerHTML=`<header class="page-head"><div class="eyebrow">Orientação temporal</div><h1>Linha do tempo</h1><p>Marcos selecionados para organizar a sequência do curso. Datas antigas podem ser aproximadas e não substituem processos de longa duração.</p></header><div class="timeline">${[...COURSE_DATA.timeline].sort((a,b)=>a[0]-b[0]).map(([y,e])=>`<div class="timeline-row"><div class="timeline-year">${formatYear(y)}</div><div class="timeline-event">${escapeHTML(e)}</div></div>`).join('')}</div>`; bindCommon();
+  }
+  function renderGlossary(){
+    main.innerHTML=`<header class="page-head"><div class="eyebrow">Referência rápida</div><h1>Glossário</h1><p>Conceitos que aparecem ao longo das aulas. Use a busca para revisar termos específicos.</p></header><input class="glossary-search" id="glossarySearch" type="search" placeholder="Buscar termo…"><dl class="glossary-list" id="glossaryList">${glossaryHTML(COURSE_DATA.glossary)}</dl>`;
+    $('#glossarySearch').addEventListener('input',e=>{const q=normalize(e.target.value);const rows=COURSE_DATA.glossary.filter(([t,d])=>normalize(t+' '+d).includes(q));$('#glossaryList').innerHTML=glossaryHTML(rows)});
+  }
+  function glossaryHTML(rows){return rows.map(([t,d])=>`<div class="glossary-item"><dt>${escapeHTML(t)}</dt><dd>${escapeHTML(d)}</dd></div>`).join('')||'<div class="empty">Nenhum termo encontrado.</div>'}
+
+  function renderSources(){
+    main.innerHTML=`<header class="page-head"><div class="eyebrow">Referências</div><h1>Fontes e critérios</h1><p>O aplicativo foi desenhado como material didático de síntese. A seleção abaixo reúne referências acadêmicas e institucionais usadas para orientar cronologias, conceitos e decisões de interface.</p></header><div class="source-grid">${COURSE_DATA.sources.map(s=>`<article class="source-card"><h3>${escapeHTML(s.name)}</h3><p>${escapeHTML(s.note)}</p></article>`).join('')}</div><section class="lesson-section"><h2>Critério historiográfico</h2><p>O curso evita apresentar categorias antigas como identidades nacionais modernas, diferencia datas tradicionais de evidência arqueológica e trata processos como “romanização” e “queda de Roma” como debates historiográficos, não como fórmulas fechadas.</p></section>`;
+  }
+
+  function findNextLesson(){
+    for(const m of COURSE_DATA.modules)for(const l of m.lessons)if(!state.completedLessons.includes(l.id))return {lesson:l,module:m};
+    return null;
+  }
+  function shuffle(arr){for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]]}return arr}
+  function normalize(s=''){return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()}
+
+  function bindCommon(){
+    $$('[data-route-go]').forEach(b=>b.addEventListener('click',()=>setRoute(b.dataset.routeGo)));
+    $$('[data-module]').forEach(b=>b.addEventListener('click',()=>{setRoute('course');setTimeout(()=>{const d=document.getElementById(b.dataset.module);if(d){d.open=true;d.scrollIntoView({behavior:'smooth',block:'start'})}},20)}));
+    $$('[data-lesson]').forEach(b=>b.addEventListener('click',()=>setRoute('lesson',{lessonId:b.dataset.lesson})));
+  }
+
+  $$('.nav-item').forEach(btn=>btn.addEventListener('click',()=>{setRoute(btn.dataset.route);closeSidebar()}));
+  $('#menuButton').addEventListener('click',()=>{const s=$('#sidebar');const open=s.classList.toggle('open');$('#menuButton').setAttribute('aria-expanded',String(open))});
+  function closeSidebar(){ $('#sidebar').classList.remove('open'); $('#menuButton').setAttribute('aria-expanded','false'); }
+
+  $('#themeButton').addEventListener('click',()=>{state.theme=state.theme==='dark'?'light':'dark';applyTheme();saveState()});
+  function applyTheme(){document.documentElement.dataset.theme=state.theme;$('#themeButton').textContent=state.theme==='dark'?'☀':'◐'}
+
+  const search=$('#globalSearch'); let searchBox=null;
+  search.addEventListener('input',()=>{
