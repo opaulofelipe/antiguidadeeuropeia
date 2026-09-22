@@ -58,3 +58,63 @@ const COURSE_DATA = {
         ],terms:['pólis','cidadania','hoplita','tirania']},
         {id:'m3l2',title:'Colonização e redes mediterrânicas',duration:'14 min',intro:'Entre os séculos VIII e VI a.C., comunidades gregas fundaram assentamentos do Mar Negro à Península Ibérica.',sections:[
           ['Por que fundar colônias?','Pressões por terra, conflitos políticos, oportunidades comerciais e estratégias locais variavam de caso a caso. Não houve um único “projeto colonial grego”.'],
+          ['Guerras samnitas','Nos séculos IV e III a.C., Roma enfrentou os samnitas em conflitos prolongados pelo controle da Itália central e meridional. A vitória romana foi gradual e custosa.'],
+          ['Alianças e incorporação','Roma combinou conquista, tratados, colônias, cidadania em graus distintos e redes viárias. Esse modelo flexível ajudou a mobilizar recursos humanos muito superiores aos de uma única cidade.']
+        ],terms:['samnitas','foedus','colônia','socii']},
+        {id:'m6l3',title:'Roma: monarquia, república e memória',duration:'16 min',intro:'A tradição situa a fundação de Roma em 753 a.C., mas a arqueologia mostra formação urbana gradual.',sections:[
+          ['Do mito à arqueologia','Narrativas de Rômulo, Remo e reis preservam memórias e ideologias posteriores. O sítio de Roma revela ocupação antiga e integração progressiva de assentamentos ao redor do Tibre.'],
+          ['A República','A tradição data a expulsão do último rei em 509 a.C. A ordem republicana dividia poder entre magistraturas, Senado e assembleias, mas era dominada inicialmente por aristocracias.'],
+          ['Conflito das ordens','As tensões entre patrícios e plebeus produziram mudanças como tribunos da plebe, Lei das Doze Tábuas e acesso gradual a magistraturas. O processo foi longo e não eliminou desigualdades.']
+        ],terms:['Rômulo','República','patrícios','tribunos da plebe']}
+      ]
+    },
+    {
+      id:'m7', number:7, title:'República Romana e expansão', period:'264–27 a.C.', summary:'Guerras Púnicas, expansão mediterrânica, escravidão, conflitos sociais e guerras civis.',
+      lessons:[
+        {id:'m7l1',title:'Guerras Púnicas e conquista do Mediterrâneo',duration:'18 min',intro:'O conflito entre Roma e Cartago transformou uma potência itálica em potência mediterrânica.',sections:[
+          ['Primeira Guerra Púnica','A disputa pela Sicília obrigou Roma a desenvolver grande capacidade naval. A vitória abriu caminho para províncias fora da Itália.'],
+          ['Aníbal e a Segunda Guerra','Aníbal atravessou os Alpes e derrotou exércitos romanos, inclusive em Canas. Roma resistiu, explorou sua rede de aliados e levou a guerra à África, onde Cipião venceu em Zama.'],
+          ['Consequências','A expansão trouxe riqueza, escravizados, terras e oportunidades políticas, mas também agravou competição aristocrática e desigualdades. Guerras externas e crise interna tornaram-se inseparáveis.']
+        ],terms:['Cartago','Aníbal','Canas','Zama']},
+        {id:'m7l2',title:'Sociedade, escravidão e conflito agrário',duration:'18 min',intro:'A expansão republicana alterou profundamente trabalho, propriedade e relações sociais.',sections:[
+          ['Escravidão em escala','Prisioneiros de guerra alimentaram mercados de escravizados. O trabalho compulsório existiu em casas, minas, oficinas e propriedades rurais, com enorme variedade de condições.'],
+          ['Os Gracos','Tibério e Caio Graco propuseram reformas agrárias e outras medidas em meio a forte conflito político. Ambos morreram violentamente, sinalizando a normalização da violência na disputa interna.'],
+          ['Aliados itálicos','Comunidades aliadas forneciam soldados sem possuir sempre os mesmos direitos políticos dos cidadãos romanos. A Guerra Social levou à extensão ampla da cidadania pela Itália.']
+        ],terms:['latifúndio','Gracos','Guerra Social','manumissão']},
+        {id:'m7l3',title:'Guerras civis e fim da República',duration:'19 min',intro:'No século I a.C., exércitos, patronagem e competição entre elites romperam limites institucionais.',sections:[
+          ['Mário e Sula','Conflitos entre facções culminaram em marchas armadas sobre Roma, proscrições e ditadura de Sula. A violência política passou a operar em escala inédita.'],
+          ['César e Pompeu','A aliança entre César, Pompeu e Crasso se desfez. César cruzou o Rubicão, derrotou Pompeu e acumulou poderes antes de ser assassinado em 44 a.C.'],
+          ['Otaviano e Antônio','Nova guerra civil terminou com a vitória de Otaviano em Ácio, em 31 a.C. Em 27 a.C., ele recebeu o título de Augusto e inaugurou uma nova estrutura monárquica sob linguagem republicana.']
+        ],terms:['proscrição','Rubicão','Júlio César','Ácio']}
+      ]
+    },
+    {
+      id:'m8', number:8, title:'O Principado romano', period:'27 a.C.–235 d.C.', summary:'Augusto, administração imperial, cidades, economia, exército, religião e vida cotidiana.',
+      lessons:[
+        {id:'m8l1',title:'Augusto e a nova ordem imperial',duration:'18 min',intro:'Augusto evitou o título de rei, mas concentrou poderes militares, políticos e religiosos.',sections:[
+          ['Monarquia sem nome de monarquia','O princeps apresentava-se como primeiro entre cidadãos, enquanto controlava províncias estratégicas, exércitos e sucessão. A linguagem republicana ajudava a legitimar uma realidade nova.'],
+          ['Propaganda e urbanismo','Moedas, monumentos, literatura e rituais apresentavam a nova ordem como restauração da paz. A Ara Pacis e fóruns imperiais articulavam espaço urbano e ideologia.'],
+          ['Sucessão','A ausência de uma regra constitucional clara tornava sucessões delicadas. Dinastias, adoções, apoio militar e reconhecimento senatorial se combinaram de formas diferentes.']
+        ],terms:['princeps','Augusto','Ara Pacis','Pax Romana']},
+        {id:'m8l2',title:'Províncias, cidades e cidadania',duration:'17 min',intro:'O Império Romano governava vastos territórios por meio de cidades, elites locais, exército e tributação.',sections:[
+          ['Governar à distância','Roma não possuía uma burocracia comparável à de Estados modernos. Governadores e procuradores dependiam de elites municipais, contratos, censos e redes locais.'],
+          ['Romanização em debate','“Romanização” já foi entendida como difusão unilateral da cultura romana. Hoje, prefere-se analisar apropriações, negociações, resistências e identidades provinciais múltiplas.'],
+          ['Cidadania em expansão','O estatuto de cidadão se ampliou gradualmente. Em 212 d.C., a Constitutio Antoniniana concedeu cidadania romana à maioria dos habitantes livres do império.']
+        ],terms:['província','municipium','romanização','Constitutio Antoniniana']},
+        {id:'m8l3',title:'Economia, escravidão e vida cotidiana',duration:'18 min',intro:'O Mediterrâneo romano integrava regiões por impostos, mercados, transporte marítimo e redes urbanas.',sections:[
+          ['Produção e comércio','Grãos, vinho, azeite, cerâmica, metais e outros produtos circularam em grande escala. Ânforas, naufrágios e resíduos portuários ajudam a reconstruir essas rotas.'],
+          ['Trabalho livre e não livre','Pessoas escravizadas, libertas, camponeses, artesãos, soldados e comerciantes participavam de uma economia heterogênea. Não existe um único “modelo” de trabalho romano.'],
+          ['Cidade e desigualdade','Aquedutos, banhos, anfiteatros e fóruns conviviam com habitação precária, incêndios, dependência de abastecimento e forte hierarquia social. A monumentalidade não deve esconder a desigualdade.']
+        ],terms:['ânfora','liberto','annona','insula']}
+      ]
+    },
+    {
+      id:'m9', number:9, title:'Europa além das cidades greco-romanas', period:'c. 800 a.C.–200 d.C.', summary:'Celtas, iberos, lusitanos, trácios, dácios, ilírios e povos germânicos em seus próprios contextos.',
+      lessons:[
+        {id:'m9l1',title:'Celtas: uma categoria complexa',duration:'18 min',intro:'“Celta” descreve fenômenos linguísticos e arqueológicos amplos, mas não um povo politicamente unificado.',sections:[
+          ['Hallstatt e La Tène','Arqueólogos usam esses termos para conjuntos materiais da Idade do Ferro na Europa central e ocidental. Objetos semelhantes não provam identidade política única.'],
+          ['Elites e redes','Sepultamentos ricos, fortalezas e importações mediterrânicas mostram elites conectadas a longas rotas comerciais. Vinho e objetos de prestígio circularam para além do mundo greco-romano.'],
+          ['Conquista romana','A expansão romana na Gália e em outras regiões reconfigurou comunidades locais. A resistência de Vercingetórix é conhecida sobretudo por fontes romanas, que precisam ser lidas criticamente.']
+        ],terms:['Hallstatt','La Tène','oppidum','Vercingetórix']},
+        {id:'m9l2',title:'Península Ibérica: iberos, celtiberos e lusitanos',duration:'17 min',intro:'A Península Ibérica reunia sociedades diversas, conectadas a fenícios, gregos, cartagineses e romanos.',sections:[
+          ['Diversidade regional','Iberos ocupavam sobretudo leste e sul; comunidades chamadas celtiberas viviam em áreas interiores; lusitanos e outros grupos ocupavam o oeste e noroeste. Os nomes vêm em grande parte de autores externos.'],
