@@ -1,0 +1,9 @@
+{
+  "name": "Antiguidade Europeia — Curso Interativo",
+  "short_name": "Antiguidade",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f4efe8",
+  "theme_color": "#201a17",
+  "lang": "pt-BR"
+}
