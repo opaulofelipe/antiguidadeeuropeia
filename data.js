@@ -148,3 +148,33 @@ const COURSE_DATA = {
         ],terms:['retórica','paideia','patronato','memória coletiva']}
       ]
     },
+    {
+      id:'m11', number:11, title:'Fronteiras, exército e integração imperial', period:'séculos I–III d.C.', summary:'Legiões, auxiliares, limes, mobilidade e transformações nas províncias europeias.',
+      lessons:[
+        {id:'m11l1',title:'O exército romano',duration:'18 min',intro:'O exército era instrumento de conquista, defesa, mobilidade social e circulação cultural.',sections:[
+          ['Legiões e auxiliares','Legionários eram cidadãos; tropas auxiliares recrutavam muitos não cidadãos. Ao final do serviço, auxiliares podiam receber cidadania, integrando famílias e comunidades ao sistema imperial.'],
+          ['Mais que combate','Soldados construíam estradas, fortes e infraestrutura, movimentavam salários e abastecimento e formavam comunidades nas fronteiras.'],
+          ['Política imperial','Exércitos podiam decidir sucessões. O chamado “Ano dos Quatro Imperadores”, em 69 d.C., mostrou como a lealdade das tropas era decisiva para o poder.']
+        ],terms:['legião','auxilia','diploma militar','castrum']},
+        {id:'m11l2',title:'Reno, Danúbio e o limes',duration:'17 min',intro:'Fronteira romana não era uma muralha contínua e impermeável.',sections:[
+          ['Zonas de contato','Fortes, rios, estradas e postos de controle regulavam movimentos, mas comércio, migração, diplomacia e contrabando atravessavam as fronteiras.'],
+          ['Britânia','A muralha de Adriano organizava circulação e presença militar no norte da província. Seu objetivo era controle territorial, não separar dois mundos completamente isolados.'],
+          ['Danúbio','O corredor danubiano conectava províncias, exércitos e mercados. Também foi palco recorrente de guerras com dácios, sármatas, godos e outros grupos.']
+        ],terms:['limes','Muralha de Adriano','Reno','Danúbio']},
+        {id:'m11l3',title:'Mobilidade e identidades profinciais',duration:'16 min',intro:'O Império Romano colocou pessoas de regiões distantes em contato cotidiano.',sections:[
+          ['Soldados e migrantes','Unidades militares podiam servir longe de sua região de origem. Comerciantes, escravizados, administradores e famílias também atravessavam o império.'],
+          ['Culturas locais','Inscrições mostram nomes, deuses e línguas locais convivendo com práticas romanas. Identidade provincial podia ser simultaneamente local e imperial.'],
+          ['Cidades como nós','Cidades organizavam tributação, cultos, mercados e status cívico. Em algumas regiões, sua expansão mudou profundamente formas anteriores de organização do território.']
+        ],terms:['mobilidade','provincial','epigrafia','civitas']}
+      ]
+    },
+    {
+      id:'m12', number:12, title:'Crise e Antiguidade Tardia', period:'235–500 d.C.', summary:'Crise do século III, reformas, cristianização, migrações e transformação do Império Romano no Ocidente.',
+      lessons:[
+        {id:'m12l1',title:'A crise do século III',duration:'18 min',intro:'Entre 235 e 284 d.C., o império enfrentou sucessões rápidas, guerras civis, invasões, epidemias e dificuldades fiscais.',sections:[
+          ['Crise política','Vários imperadores chegaram ao poder com apoio militar e foram derrubados rapidamente. Regiões chegaram a formar poderes separados, como o chamado Império Gálico.'],
+          ['Pressões múltiplas','A fronteira persa no Oriente e grupos além do Reno e Danúbio pressionaram o império. Problemas monetários e epidemias agravaram a instabilidade.'],
+          ['Capacidade de recuperação','O século III não foi apenas “decadência”. O Estado reorganizou exército, fiscalidade e administração, preparando reformas posteriores.']
+        ],terms:['anarquia militar','Império Gálico','Aureliano','inflação']},
+        {id:'m12l2',title:'Diocleciano, Constantino e cristianização',duration:'19 min',intro:'As reformas do final do século III e início do IV alteraram a estrutura do governo imperial.',sections:[
+          ['Tetrarquia','Diocleciano tentou dividir responsabilidades entre governantes para responder melhor às crises. A experiência reduziu distâncias administrativas, mas não eliminou disputas sucessórias.'],
