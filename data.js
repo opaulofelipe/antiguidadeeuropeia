@@ -118,3 +118,33 @@ const COURSE_DATA = {
         ],terms:['Hallstatt','La Tène','oppidum','Vercingetórix']},
         {id:'m9l2',title:'Península Ibérica: iberos, celtiberos e lusitanos',duration:'17 min',intro:'A Península Ibérica reunia sociedades diversas, conectadas a fenícios, gregos, cartagineses e romanos.',sections:[
           ['Diversidade regional','Iberos ocupavam sobretudo leste e sul; comunidades chamadas celtiberas viviam em áreas interiores; lusitanos e outros grupos ocupavam o oeste e noroeste. Os nomes vêm em grande parte de autores externos.'],
+          ['Colonização mediterrânica','Fenícios e gregos estabeleceram entrepostos e cidades costeiras. Cartago ampliou presença na península antes da Segunda Guerra Púnica. Metais e produtos agrícolas eram importantes nas trocas.'],
+          ['Conquista longa','A submissão romana levou gerações. Guerras contra lusitanos e celtiberos, como o cerco de Numância, mostram que a expansão foi fragmentada e contestada.']
+        ],terms:['ibero','celtibero','lusitano','Numância']},
+        {id:'m9l3',title:'Bálcãs, Dácia e povos germânicos',duration:'18 min',intro:'Trácios, ilírios, dácios e grupos germânicos formaram sociedades variadas nas fronteiras e além delas.',sections:[
+          ['Trácios e ilírios','Esses rótulos cobrem várias comunidades dos Bálcãs. Reinos, chefias, cidades e contatos com gregos e macedônicos coexistiram em diferentes épocas.'],
+          ['Dácia','Ao norte do Danúbio, o reino de Decébalo tornou-se rival de Roma. Trajano conquistou parte da Dácia em 106 d.C.; a região era valorizada também por seus recursos minerais.'],
+          ['“Germanos”','Autores romanos agrupavam diferentes povos sob essa categoria. Relações de comércio, serviço militar, diplomacia e guerra atravessavam a fronteira do Reno e do Danúbio.']
+        ],terms:['Trácios','Dácia','Decébalo','limes']}
+      ]
+    },
+    {
+      id:'m10', number:10, title:'Sociedade, gênero, religião e cultura', period:'Antiguidade comparada', summary:'Estruturas sociais, família, escravidão, religião, educação e produção cultural em perspectiva comparada.',
+      lessons:[
+        {id:'m10l1',title:'Família, gênero e cidadania',duration:'18 min',intro:'Normas de gênero e família variavam, mas sociedades antigas eram marcadamente hierárquicas.',sections:[
+          ['Casa e poder','O oikos grego e a domus romana articulavam parentesco, patrimônio, trabalho e autoridade. A casa era uma unidade econômica e política, não apenas privada.'],
+          ['Mulheres e agência','A exclusão formal de instituições políticas não significa ausência de ação social. Mulheres podiam exercer papéis religiosos, econômicos, familiares e, em contextos específicos, políticos.'],
+          ['Lei e estatuto','Direitos dependiam de cidadania, liberdade, idade, sexo e posição familiar. Comparar sociedades exige evitar a ideia de uma única “condição feminina” ou “família antiga”.']
+        ],terms:['oikos','domus','paterfamilias','estatuto']},
+        {id:'m10l2',title:'Religiões antigas',duration:'17 min',intro:'Religião antiga estava profundamente integrada à vida cívica, doméstica e política.',sections:[
+          ['Culto antes de dogma','Em muitos contextos greco-romanos, práticas rituais, sacrifícios, festivais e obrigações comunitárias importavam mais do que adesão a um credo único.'],
+          ['Sincretismos e traduções','Deuses podiam ser identificados, aproximados ou reinterpretados entre sociedades. Isso não significa que todas as divindades fossem consideradas idênticas.'],
+          ['Cultos e império','O culto imperial ajudou a expressar lealdade política em muitas províncias. Judaísmo e cristianismo criaram tensões específicas por suas próprias tradições e formas de exclusividade religiosa.']
+        ],terms:['culto cívico','sacrifício','sincretismo','culto imperial']},
+        {id:'m10l3',title:'Conhecimento, educação e memória',duration:'17 min',intro:'A produção intelectual antiga esteve ligada a escolas, patronos, cidades e redes de circulação.',sections:[
+          ['Oralidade e escrita','Mesmo em sociedades letradas, leitura pública, memorização e performance oral permaneceram centrais. A alfabetização era desigual e variava muito por região e grupo social.'],
+          ['Educação','Em contextos gregos e romanos, elites valorizavam gramática, retórica, literatura e filosofia. A educação era também mecanismo de distinção social.'],
+          ['Memória política','Monumentos, funerais, calendários e narrativas do passado ajudavam comunidades a produzir identidades. Controlar a memória podia ser uma forma de controlar legitimidade.']
+        ],terms:['retórica','paideia','patronato','memória coletiva']}
+      ]
+    },
