@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#201a17" />
+  <meta name="description" content="Curso interativo de História da Antiguidade no continente europeu." />
+  <title>Antiguidade Europeia — Curso Interativo</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Navegação principal">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">AE</div>
+        <div><strong>Antiguidade Europeia</strong><span>curso interativo</span></div>
+      </div>
+      <nav class="main-nav" id="mainNav">
+        <button class="nav-item is-active" data-route="home">Início</button>
+        <button class="nav-item" data-route="course">Curso</button>
+        <button class="nav-item" data-route="activities">Atividades</button>
+        <button class="nav-item" data-route="timeline">Linha do tempo</button>
+        <button class="nav-item" data-route="glossary">Glossário</button>
+        <button class="nav-item" data-route="sources">Fontes</button>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="progress-mini"><span>Progresso</span><strong id="progressMiniText">0%</strong></div>
+        <div class="progress-track" aria-hidden="true"><div id="progressMiniBar"></div></div>
+      </div>
+    </aside>
+
+    <div class="main-column">
+      <header class="topbar">
+        <button class="icon-button menu-button" id="menuButton" aria-label="Abrir menu" aria-expanded="false">☰</button>
+        <label class="search-box">
+          <span class="sr-only">Pesquisar no curso</span>
+          <input id="globalSearch" type="search" placeholder="Pesquisar povos, conceitos, períodos…" autocomplete="off" />
+        </label>
+        <button class="icon-button" id="themeButton" aria-label="Alternar tema">◐</button>
+      </header>
+      <main id="main" tabindex="-1"></main>
+    </div>
+  </div>
+
+  <div class="toast-region" id="toastRegion" role="status" aria-live="polite" aria-atomic="true"></div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
